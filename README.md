@@ -39,7 +39,7 @@
 
 ## 2.3 原型作品链接（5分）
 
- [原型作品](https://js.design/f/98OcGd?p=pazDjT1m7i&linkelement=undefined)
+ [原型作品预览](https://js.design/f/98OcGd)
 
 ## 2.4 原型界面图片展示（6分）
 
