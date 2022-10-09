@@ -1,0 +1,482 @@
+/* 初始化 */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #121212;
+}
+body{
+    position: absolute;
+    left: 200px;
+    width: 1280px;
+    height: 800px;
+}
+/* 背景 */
+#index{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 800px;
+    opacity: 1;
+    z-index: 0;
+    background: url("https://img.js.design/assets/img/6337cc93a87ff65bec54d992.png#995076947ff966d2b96a121d48447892");
+    background-size: 100% 100%;
+}
+/* 规则 */
+#rule{
+    position: absolute;
+    left: 1018px;
+    top: 21px;
+    width: 230px;
+    height: 90px;
+    opacity: 1;
+    z-index: 2;
+    border-radius: 45px;
+    background: radial-gradient(50% 50%, rgba(224, 115, 47, 1) 0%, rgba(224, 115, 47, 0.21) 100%);
+    border: 5px solid rgba(0, 0, 0, 0.46);
+
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.25);
+    /** 文本1 */
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 90px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+#rule:hover{
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 10px;
+}
+#rule:active{
+    background: rgba(255, 165, 0, 0.7);
+}
+/* 按钮 */
+div[class^="button"]{
+    width: 328px;
+    height: 89px;
+    opacity: 0.7;
+    border-radius: 90px;
+    /** 文本1 */
+    font-family: 阿里妈妈数黑体, serif;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.25);
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 89px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+}
+div[class^="button"]:hover{
+    font-size: 54px;
+    font-weight: 600;
+}
+div[class^="button"]:active{
+    background: radial-gradient(50% 50%, rgba(25, 167, 163, 0.5) 0%, rgb(255, 207, 43) 100%);
+}
+div[class*="PVN"]{
+    position: absolute;
+    left: 853px;
+    top: 154px;
+    border-radius: 90px;
+
+    background: rgb(52, 209, 209);
+    border: 14px dashed rgba(90, 103, 204, 0.5);
+}
+div[class*="PVP"]{
+    position: absolute;
+    left: 853px;
+    top: 298px;
+    background: rgb(52, 209, 209);
+    border: 14px dashed rgba(90, 103, 204, 0.5);
+}
+div[class*="Online"]{
+    position: absolute;
+    left: 853px;
+    top: 442px;
+    background: rgb(52, 209, 209);
+    border: 14px dashed rgba(90, 103, 204, 0.5);
+}
+div[class*="exit"]{
+    position: absolute;
+    left: 853px;
+    top: 586px;
+    background: radial-gradient(50% 50%, rgba(222, 11, 11, 1) 0%, rgba(176, 25, 25, 0.5) 100%);
+    border: 14px dashed rgba(73, 89, 214, 0.5);
+}
+/* 玩家信息 */
+#player-info{
+    position: absolute;
+    width: 871px;
+    height: 112px;
+    opacity: 1;
+    left: 11px;
+    top: 10px;
+    display: block;
+    clear: both;
+}
+/* 头像框 */
+.avatar{
+    width: 112px;
+    height: 112px;
+    opacity: 1;
+    display: inline-block;
+    background: url("https://img.js.design/assets/img/63354e177ca7bb9a4f82f202.png#6df6a382683443fe2c7aad02f9ef8857");
+    border-radius: 56px;
+    background-size: 100% 100%;
+}
+/* id及昵称 */
+div[class="name;pid"]{
+    display: inline-block;
+    position: relative;
+    top: -22px;
+    width: 238px;
+    height: 112px;
+    opacity: 1;
+
+}
+/* id */
+#player-id{
+
+    width: 238px;
+    height: 56px;
+    opacity: 1;
+
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+
+}
+/* 昵称 */
+.name{
+    display: inline-block;
+    width: 238px;
+    height: 56px;
+    opacity: 1;
+
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+/* 对局情况 */
+#win-lose{
+    display: inline-block;
+    width: 521px;
+    height: 112px;
+    opacity: 1;
+    position: relative;
+    top: -136px;
+    left: 355px;
+}
+/*总对局数*/
+#win-lose > div:nth-child(1){
+    width: 175px;
+    height: 112px;
+    opacity: 1;
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* 胜负情况 */
+#win-lose > div:nth-child(2){
+    width: 336px;
+    height: 112px;
+    opacity: 1;
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 112px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* 样式展示 */
+
+/* 骰子展示 */
+.show-touzi{
+    position: absolute;
+    left: 67px;
+    top: 154px;
+    width: 653px;
+    height: 171px;
+    opacity: 1;
+    border-radius: 45px;
+    border: 4px solid rgba(0, 0, 0, 1);
+}
+/* 前置文本 */
+.show-touzi > div[class="explain"]{
+    width: 130px;
+    height: 171px;
+    font-family: "851手書き雑フォント", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 171px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+/* 点数对应骰子 */
+.touzi{
+    position: relative;
+    left: 130px;
+    top: -171px;
+    width: 522px;
+    height: 171px;
+    opacity: 1;
+}
+#one,#two,#three,#four,#five,#six {
+    width: 174px;
+    height: 77px;
+    opacity: 1;
+}
+div[class="s"]{
+    width: 77px;
+    height: 77px;
+    opacity: 1;
+}
+div[class="text"]{
+    position: relative;
+    left: 77px;
+    top: -77px;
+    width: 97px;
+    height: 77px;
+    opacity: 1;
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    line-height: 77px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+/* 点数1 */
+#one{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#one div[class="s"]{
+    background: url("https://img.js.design/assets/img/633d8c618bc7323bc55b0c3e.png#acbf970acb88f6d830f3852aadcbf37b");
+    background-size: 100% 100%;
+}
+/* 点数2 */
+#two{
+    position: relative;
+    top: -77px;
+    left: 174px;
+}
+#two div[class="s"]{
+    background: url("https://img.js.design/assets/img/6332dc605dc98dd76d055202.png#67b8c53d907040943b1e1b48b0bed944");
+    background-size: 100% 100%;
+}
+/* 点数3 */
+#three{
+    position: relative;
+    top: -154px;
+    left: 348px;
+}
+#three div[class="s"]{
+    background: url("https://img.js.design/assets/img/632f0601784cb96fed9a8e41.png#abd84b2770d52f47711e9e8cea83a3be");
+    background-size: 100% 100%;
+}
+/* 点数4 */
+#four{
+    position: relative;
+    top: -137px;
+    left: 0;
+}
+#four div[class="s"]{
+    background: url("https://img.js.design/assets/img/6332dc8f7de19a299498d4de.png#f52cf04375fbf50f86542902048b7f4e");
+    background-size: 100% 100%;
+}
+/* 点数5 */
+#five{
+    position: relative;
+    top: -214px;
+    left: 174px;
+}
+#five div[class="s"]{
+    background: url("https://img.js.design/assets/img/6332dc9aebef9722cf9ed625.png#4eb3d153577eb03c7484a5024f135533");
+    background-size: 100% 100%;
+}
+/* 点数6 */
+#six{
+    position: relative;
+    top: -291px;
+    left: 348px;
+}
+#six div[class="s"]{
+    background: url("https://img.js.design/assets/img/632effa6f2b0065dcd0f7c4c.png#c16d642ed63bfd6a22cd2ae5f4299830");
+    background-size: 100% 100%;
+}
+/* 棋盘展示 */
+.show-brode{
+    position: absolute;
+    left: 67px;
+    top: 353px;
+    width: 469px;
+    height: 210px;
+    opacity: 1;
+    border-radius: 45px;
+
+    border: 4px solid rgba(0, 0, 0, 1);
+}
+/* 前置文本 */
+.show-brode > div[class="explain"]{
+    width: 131px;
+    height: 210px;
+    opacity: 1;
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 210px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+/* 现持棋盘 */
+.brode{
+    position: relative;
+    left: 131px;
+    top: -210px;
+    width: 210px;
+    height: 210px;
+    opacity: 1;
+    background: url("https://img.js.design/assets/img/6332dd317de19a299498ff16.png#f424c72ec7bf78d371752ac9a31a1200");
+    background-size: 100% 100%;
+}
+/* 棋盘名字 */
+.brode-name{
+    position: relative;
+    left: 341px;
+    top: -420px;
+    width: 107px;
+    height: 210px;
+    opacity: 1;
+    /** 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 210px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+/* 商店 */
+#shop{
+    position: absolute;
+    left: 67px;
+    top: 596px;
+    width: 688px;
+    height: 134px;
+    opacity: 1;
+    border-radius: 45px;
+    border: 4px solid rgba(0, 0, 0, 1);
+}
+/* 渐变色字体 */
+span{
+    /* 文本 */
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.25);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 135px;
+    color: transparent;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(38, 108, 222, 1) 100%);
+    -webkit-background-clip: text;
+    text-align: center;
+    vertical-align: middle;
+}
+/* 前置文本 */
+#shop > div[class="explain"]{
+    width: 134px;
+    height: 135px;
+    opacity: 1;
+    /* 文本1 */
+    font-family: "851手書き雑フォント", serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    line-height: 135px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+/* 解锁骰子 */
+#touzi-shop{
+    position: relative;
+    left: 134px;
+    top: -136px;
+    width: 259px;
+    height: 135px;
+    opacity: 1;
+    border-radius: 45px;
+    background: linear-gradient(162.97deg, rgba(230, 210, 179, 1) 0%, rgba(52, 209, 209, 0.01) 100%), rgba(255, 255, 255, 1);
+    border: 2px solid rgba(60, 200, 200, 1);
+}
+#touzi-shop > span{
+    position: relative;
+    left: 50px;
+    top: 0;
+}
+/* 解锁棋盘 */
+#brode-shop{
+    position: relative;
+    left: 405px;
+    top: -276px;
+    width: 259px;
+    height: 135px;
+    opacity: 1;
+    border-radius: 45px;
+    background: linear-gradient(196.29deg, rgba(240, 224, 189, 1) 0%, rgba(52, 209, 209, 0.01) 100%), rgba(255, 255, 255, 1);
+    border: 2px solid rgba(60, 200, 180, 1);
+}
+#brode-shop > span{
+    position: relative;
+    left: 50px;
+    top: 0;
+}
+/* logo */
+#logo{
+    position: absolute;
+    left: 586px;
+    top: 364px;
+    width: 169px;
+    height: 186px;
+    opacity: 1;
+    border-radius: 45px;
+    background: url("https://img.js.design/assets/img/632d9f3111b327c3da58fc76.png#3ab3533bada1c11f019214e12747b2da");
+    background-size: 100% 100%;
+}
