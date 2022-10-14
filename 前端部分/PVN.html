@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PVN</title>
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="css/PK-style.css">
+    <link rel="stylesheet" href="css/giveUp-style.css">
+    <link rel="stylesheet" href="css/countScore-style.css">
+</head>
+<body onload="startRound()">
+    <div class="PK">
+        <!--time-digit-->
+        <div id="time-digit">
+            <span>计</span>
+            <div id="timeValue">60</div>
+            <span>时</span>
+        </div>
+        <!--time-block-->
+        <div id="time-block"></div>
+        <!-- 玩家A区域 -->
+        <div class="A">
+            <div class="brode">
+                <ul id="A-list">
+                    <li id="A3" value=0></li>
+                    <li id="A2" value=0></li>
+                    <li id="A1" value=0></li>
+                    <li id="A6" value=0></li>
+                    <li id="A5" value=0></li>
+                    <li id="A4" value=0></li>
+                    <li id="A9" value=0></li>
+                    <li id="A8" value=0></li>
+                    <li id="A7" value=0></li>
+                </ul>
+            </div>
+            <div class="avatar"></div>
+            <div class="dice-block">
+                <div class="button" id="aButton">点击投掷</div>
+                <div class="show" id="aShow"></div>
+            </div>
+            <div class="tip">
+                <span>--这是一段提示文字--</span>
+            </div>
+            <div class="name"><span>食不食油饼</span></div>
+        </div>
+        <div class="B">
+            <div class="brode">
+                <ul id="B-list">
+                    <li id="B1" value=0></li>
+                    <li id="B2" value=0></li>
+                    <li id="B3" value=0></li>
+                    <li id="B4" value=0></li>
+                    <li id="B5" value=0></li>
+                    <li id="B6" value=0></li>
+                    <li id="B7" value=0></li>
+                    <li id="B8" value=0></li>
+                    <li id="B9" value=0></li>
+                </ul>
+            </div>
+            <div class="avatar"></div>
+            <div class="dice-block">
+                <div class="button" id="bButton">点击投掷</div>
+                <div class="show" id="bShow"></div>
+            </div>
+            <div class="tip">
+                <span>--这是一段提示文字--</span>
+            </div>
+            <div class="name"><span>没赢就摆烂</span></div>
+        </div>
+        <div id="AI">一键托管</div>
+        <div id="giveUp">投降</div>
+    </div>
+    <div class="exit">
+        <span>是否要放弃对局</span>
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <a href="index.html">
+            <div id="confirm">确定</div>
+        </a>
+        <a href="#">
+            <div id="cancel">取消</div>
+        </a>
+    </div>
+    <div id="countScore">
+        <div class="A">
+            <div class="name">小黑子滚呐</div>
+            <div class="avatar"></div>
+            <div class="state">lose</div>
+            <div class="score">得分：29</div>
+        </div>
+        <div class="B">
+            <div class="name">没赢就开摆</div>
+            <div class="avatar"></div>
+            <div class="state">win</div>
+            <div class="score">得分：36</div>
+        </div>
+        <a href="PVN.html">
+            <div id="again">再来一局</div>
+        </a>
+        <a href="index.html">
+            <div id="goBack">返回菜单</div>
+        </a>
+    </div>
+    <script src="js/PK.js"></script>
+</body>
+
+</html>
