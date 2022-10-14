@@ -1,6 +1,6 @@
 [GitHub地址请戳我](https://github.com/JacarandaStu/cuple-project.git)
 
-[B站视频链接请戳我](https://bilbil.com/……)
+[B站视频链接请戳我](https://www.bilibili.com/video/BV1ae4y1v7QT/?vd_source=93074e57a4470e83a40f03fb91dad1de)
 
 # 一、结对探索（4分）
 
@@ -10,7 +10,7 @@
 
 | 学号      	| 姓名 	| 作业博客链接		| 具体分工		|
 | --------- |:-----:|:-----------------:|:-------------:|
-| 032004109 | 李焯春	| [点击这里](https://github.com/JacarandaStu/cuple-project.git) |对局流程设计、原型设计、素材收集、AI启发算法 |
+| 032004109 | 李焯春	| [点击这里](https://https://bbs.csdn.net/topics/608611659?spm=1001.2014.3001.6377) |对局流程设计、原型设计、素材收集、AI启发算法 |
 | 032004118 | 林展	|[点击这里](https://bbs.csdn.net/topics/608612048?csdn_share_tail=%7B%22type%22%3A%22communityCloud%22%2C%22rType%22%3A%22topic%22%2C%22rId%22%3A%22608612048%22%2C%22source%22%3A%22zhan_abaaba%22%7D)|布局设计、AI实现、前端搭建|
 
 ## 1.2 描述结对的过程（1分）
