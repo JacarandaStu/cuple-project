@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-
+    <script src="./js/jquery.js"></script>
     <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/rule-style.css">
+    <link rel="stylesheet" href="css/avatar-style.css">
+    <link rel="stylesheet" href="css/name-style.css">
+    <link rel="stylesheet" href="css/moreDice-style.css">
+    <link rel="stylesheet" href="css/moreBrode.css">
+    <link rel="stylesheet" href="css/exit-style.css">
 </head>
 <body>
     <div id="index">
@@ -15,34 +21,35 @@
                                 margin-top: 11px;
                                 margin-left: 10px;
                                 ">
-            <a href="avatar.html">
+            <a href="#">
                 <div class="avatar"></div>
             </a>
             <div class="name;pid">
                 <div id="player-id">ID: P00001</div>
-                <a href="name.html">
-                    <div class="name">昵称: 我是你蝶</div>
+                <a href="#">
+                    <div class="name">昵称: 食不食油饼</div>
                 </a>
             </div>
             <div id="win-lose">
-                <div>总对局次数1000</div>
-                <div>胜: 700 平: 100 负: 200</div>
+                <div>总对局次数 ： 0</div>
+                <div>胜: 0 平: 0 负: 0</div>
             </div>
         </div>
         <!--   一组按钮   -->
-        <a href="rule.html">
+        <a href="#">
             <div id="rule">规则</div>
         </a>
-        <a href="PK.html">
+
+        <a href="PVN.html">
             <div class="button;PVN">人机对战</div>
         </a>
-        <a href="PK.html">
+        <a href="PVP.html">
             <div class="button;PVP">双人对战</div>
         </a>
-        <a href="PK.html">
-            <div class="button;Online">在线对决</div>
+        <a href="#">
+            <div class="button;Online">在线对决(无)</div>
         </a>
-        <a href="exit.html">
+        <a href="#">
             <div class="button;exit">退出游戏</div>
         </a>
         <!--   现持物品样式展示   -->
@@ -85,12 +92,12 @@
         <!--   商店板块   -->
         <div id="shop">
             <div class="explain">商店</div>
-            <a href="moreDice.html">
+            <a href="#">
                 <div id="touzi-shop">
                     <span>更多骰子</span>
                 </div>
             </a>
-            <a href="moreBrode.html">
+            <a href="#">
                 <div id="brode-shop">
                     <span>更多棋盘</span>
                 </div>
@@ -99,5 +106,113 @@
 
         <div id="logo"></div>
     </div>
+    <div id="ruleWindow">
+        <div class="show">
+            <!-- 具体规则内容 -->
+            <div class="rule-content">
+                <div id="picOne">
+                    <span>1.初始盘面</span>
+                    <div class="pic"></div>
+                </div>
+                <div id="picTwo">
+                    <span>2.轮流掷骰</span>
+                    <div class="pic"></div>
+                </div>
+                <div id="picThree">
+                    <span>3.消除规则</span>
+                    <div class="pic"></div>
+                </div>
+                <div id="picFour">
+                    <span>4.结算规则</span>
+                    <div class="pic"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 退出键 -->
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <div class="explain">规则介绍</div>
+    </div>
+    <div id="avatarWindow">
+        <div class="explain">请选择想要更换的头像样式</div>
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <div class="show"></div>
+        <div class="list">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="confirm">确定</div>
+        <div id="cancel">取消</div>
+    </div>
+    <div id="rename">
+        <div class="explain">更改昵称</div>
+        <div id="limit">（Tip：限长2~5个字符！）</div>
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <form action="post" >
+            <input alt="限长2~5任意字符" maxlength="5" minlength="2" name="username" type="text">
+        </form>
+        <div id="submit">确定</div>
+        <div id="reset">取消</div>
+    </div>
+    <div class="moreDice">
+        <div class="explain">请选择想要更换的骰子样式</div>
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <div class="show"></div>
+        <div class="list">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="confirm-two">确定</div>
+        <div id="cancel-two">取消</div>
+    </div>
+    <div class="moreBrode">
+        <div class="explain">请选择要更换的棋盘样式</div>
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <div class="show"></div>
+        <div class="list">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="confirm-three">确定</div>
+        <div id="cancel-three">取消</div>
+    </div>
+    <div class="exit">
+        <span>是否要退出游戏</span>
+        <a href="#">
+            <div class="close"></div>
+        </a>
+        <div id="cancel-four">取消</div>
+        <a href="blank.html">
+            <div id="confirm-four">确定</div>
+        </a>
+    </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
