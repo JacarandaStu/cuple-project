@@ -11,7 +11,7 @@
 | 学号      	| 姓名 	| 作业博客链接		| 具体分工		|
 | --------- |:-----:|:-----------------:|:-------------:|
 | 032004109 | 李焯春	| [点击这里](https://github.com/JacarandaStu/cuple-project.git) |对局流程设计、原型设计、素材收集、AI启发算法 |
-| 032004118 | 林展	|[点击这里](https://github.com/JacarandaStu/cuple-project.git)|布局设计、AI实现、前端搭建|
+| 032004118 | 林展	|[点击这里](https://bbs.csdn.net/topics/608612048?csdn_share_tail=%7B%22type%22%3A%22communityCloud%22%2C%22rType%22%3A%22topic%22%2C%22rId%22%3A%22608612048%22%2C%22source%22%3A%22zhan_abaaba%22%7D)|布局设计、AI实现、前端搭建|
 
 ## 1.2 描述结对的过程（1分）
 - 就在隔壁宿舍，离得比较近，便于沟通交流，同时在个人编程作业的时候有交流讨论过。
